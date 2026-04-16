@@ -3,31 +3,37 @@ import react from '@vitejs/plugin-react';
 import federation from '@originjs/vite-plugin-federation';
 import path from 'path';
 
-export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
-  plugins: [
-    react(),
-    federation({
-      name: 'portfolio_remote',
-      filename: 'remoteEntry.js',
-      exposes: {
-        './PortfolioApp': './src/app/App.tsx',
+export default defineConfig(({ mode }) => {
+  const isProd = mode === 'production';
+
+  return {
+    base: isProd
+      ? 'https://hubert-portfolio-remote.vercel.app/'
+      : '/',
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
       },
-      shared: ['react', 'react-dom'],
-    }),
-  ],
-  build: {
-    modulePreload: false,
-    target: 'esnext',
-    minify: false,
-    cssCodeSplit: false,
-  },
-  preview: {
-    port: 5001,
-    strictPort: true,
-  }
+    },
+    plugins: [
+      react(),
+      federation({
+        name: 'portfolio_remote',
+        filename: 'remoteEntry.js',
+        exposes: {
+          './PortfolioApp': './src/app/App.tsx',
+        },
+        shared: ['react', 'react-dom'],
+      }),
+    ],
+    build: {
+      target: 'esnext',
+      minify: false,
+      cssCodeSplit: false,
+    },
+    preview: {
+      port: 5001,
+      strictPort: true,
+    }
+  };
 });
