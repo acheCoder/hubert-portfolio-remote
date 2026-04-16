@@ -7,6 +7,11 @@
     padding-bottom: 0;
   }
 
+  @media (max-width: 480px) {
+    padding-left: 28px;
+    padding-bottom: 32px;
+  }
+
   &__dot {
     position: absolute;
     left: 0;
@@ -43,7 +48,7 @@
 
   &__company {
     font-family: var(--font-primary);
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
     font-weight: 700;
     color: var(--color-accent);
   }

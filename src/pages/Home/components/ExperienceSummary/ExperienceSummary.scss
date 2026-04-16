@@ -67,6 +67,11 @@
     &:first-child {
       border-top: 1px solid var(--color-border);
     }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
   }
 
   &__company {
@@ -88,6 +93,13 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
+
+    @media (max-width: 600px) {
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
   }
 
   &__period {
@@ -98,6 +110,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    @media (max-width: 400px) {
+      white-space: normal;
+    }
   }
 
   &__badge {

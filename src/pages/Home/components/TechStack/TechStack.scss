@@ -1,5 +1,5 @@
 .tech-stack {
-  padding: 6rem var(--content-padding-x);
+  padding: clamp(3rem, 8vw, 6rem) var(--content-padding-x);
   max-width: 860px;
   margin: 0 auto;
 
@@ -28,8 +28,8 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: clamp(8px, 2vw, 16px);
   }
 }
 
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
-  border-radius: 16px;
+  padding: clamp(0.75rem, 2vw, 1.25rem);
+  border-radius: 12px;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   cursor: pointer;

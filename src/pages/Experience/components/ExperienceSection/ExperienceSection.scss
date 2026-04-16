@@ -1,5 +1,5 @@
 .experience {
-  padding: 6rem var(--content-padding-x);
+  padding: clamp(4rem, 8vw, 6rem) var(--content-padding-x);
   max-width: 1400px;
   margin: 0 auto;
 

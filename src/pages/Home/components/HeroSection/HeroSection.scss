@@ -8,6 +8,12 @@
   gap: 16px;
   padding: 2rem var(--content-padding-x) 0rem;
 
+  @media (max-width: 768px) {
+    min-height: 60dvh;
+    gap: 12px;
+    padding-top: 5rem;
+  }
+
   &__name {
     font-family: var(--font-hero);
     font-size: clamp(2.5rem, 6vw, 5rem);
@@ -23,9 +29,9 @@
 
   &__description {
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     color: var(--color-text-muted);
-    max-width: 480px;
+    max-width: min(480px, 100%);
     line-height: 1.6;
     margin: 0;
 
