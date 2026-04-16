@@ -20,8 +20,11 @@
     "lang": {
       "label": "Comunicación",
       "title": "Idiomas",
+      "spanishName": "Español",
       "spanish": "Nativo",
+      "polishName": "Polaco",
       "polish": "Bilingüe / Nativo",
+      "englishName": "Inglés",
       "english": "B1"
     },
     "jobs": {
@@ -70,13 +73,39 @@
   },
   "tech": {
     "label": "Stack técnico",
-    "title": "Tecnologías"
+    "title": "Tecnologías",
+    "items": {
+      "react": { "experience": "Actualidad", "level": "Principiante", "description": "Desarrollo de ecosistemas escalables bajo Arquitectura Hexagonal y Microfrontends con Module Federation." },
+      "angular": { "experience": "+5 años", "level": "Experto", "description": "Versiones 8 a 18. Migraciones críticas, arquitectura modular, lazy loading y paneles complejos." },
+      "ts": { "experience": "+5 años", "level": "Experto", "description": "Tipado estricto de contratos, generics, utility types y arquitecturas escalables." },
+      "js": { "experience": "+3 años", "level": "Intermedio", "description": "ES6+, asincronía avanzada, closures y lógica core de aplicaciones." },
+      "scss": { "experience": "+1 año", "level": "Principiante", "description": "Theming multi-tenant, Design Tokens, mixins y arquitectura BEM en proyectos enterprise." },
+      "bootstrap": { "experience": "+4 años", "level": "Avanzado", "description": "Diseño de interfaces consistentes y responsive con sistema de grid y componentes." },
+      "git": { "experience": "+5 años", "level": "Experto", "description": "Estrategias de ramificación, submódulos y resolución de conflictos en equipos grandes." },
+      "github": { "experience": "+5 años", "level": "Experto", "description": "Control de versiones, PR reviews, Actions y colaboración en equipo." },
+      "fork": { "experience": "+3 años", "level": "Intermedio", "description": "Gestión avanzada de clientes Git y resolución visual de conflictos." },
+      "swagger": { "experience": "+4 años", "level": "Avanzado", "description": "Lectura e integración de contratos API documentados." },
+      "postman": { "experience": "+4 años", "level": "Avanzado", "description": "Testeo de endpoints, colecciones y validación de respuestas." },
+      "bruno": { "experience": "Actualidad", "level": "Intermedio", "description": "Cliente API open-source de nueva generación." },
+      "jira": { "experience": "+5 años", "level": "Experto", "description": "Metodologías ágiles, sprints y gestión del ciclo de software." },
+      "trello": { "experience": "+5 años", "level": "Experto", "description": "Organización de tareas y flujos Kanban." },
+      "toad": { "experience": "+2 años", "level": "Intermedio", "description": "Gestión y consulta de bases de datos relacionales Oracle." }
+    }
   },
   "experienceSummary": {
     "label": "Trayectoria",
     "title": "Experiencia",
     "cta": "Ver detalle completo →",
-    "current": "Actualidad"
+    "current": "Actualidad",
+    "companies": {
+      "izertis-cni": "Izertis - Proyecto ciberseguridad CNI",
+      "izertis-ibm": "Izertis - Proyecto IBM",
+      "tecnova": "Tecnova"
+    },
+    "modality": {
+      "remote": "Remoto",
+      "onsite": "Presencial"
+    }
   },
   "contact": {
     "label": "Contacto",

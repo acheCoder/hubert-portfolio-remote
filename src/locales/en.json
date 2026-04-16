@@ -20,8 +20,11 @@
     "lang": {
       "label": "Communication",
       "title": "Languages",
+      "spanishName": "Spanish",
       "spanish": "Native",
+      "polishName": "Polish",
       "polish": "Bilingual / Native",
+      "englishName": "English",
       "english": "B1"
     },
     "jobs": {
@@ -70,13 +73,39 @@
   },
   "tech": {
     "label": "Tech stack",
-    "title": "Technologies"
+    "title": "Technologies",
+    "items": {
+      "react": { "experience": "Current", "level": "Beginner", "description": "Development of scalable ecosystems under Hexagonal Architecture and Microfrontends with Module Federation." },
+      "angular": { "experience": "+5 years", "level": "Expert", "description": "Versions 8 to 18. Critical migrations, modular architecture, lazy loading and complex dashboards." },
+      "ts": { "experience": "+5 years", "level": "Expert", "description": "Strict contract typing, generics, utility types and scalable architectures." },
+      "js": { "experience": "+3 years", "level": "Intermediate", "description": "ES6+, advanced async, closures and core application logic." },
+      "scss": { "experience": "+1 year", "level": "Beginner", "description": "Multi-tenant theming, Design Tokens, mixins and BEM architecture in enterprise projects." },
+      "bootstrap": { "experience": "+4 years", "level": "Advanced", "description": "Consistent and responsive interface design with grid system and components." },
+      "git": { "experience": "+5 years", "level": "Expert", "description": "Branching strategies, submodules and conflict resolution in large teams." },
+      "github": { "experience": "+5 years", "level": "Expert", "description": "Version control, PR reviews, Actions and team collaboration." },
+      "fork": { "experience": "+3 years", "level": "Intermediate", "description": "Advanced Git client management and visual conflict resolution." },
+      "swagger": { "experience": "+4 years", "level": "Advanced", "description": "Reading and integrating documented API contracts." },
+      "postman": { "experience": "+4 years", "level": "Advanced", "description": "Endpoint testing, collections and response validation." },
+      "bruno": { "experience": "Current", "level": "Intermediate", "description": "Next-generation open-source API client." },
+      "jira": { "experience": "+5 years", "level": "Expert", "description": "Agile methodologies, sprints and software lifecycle management." },
+      "trello": { "experience": "+5 years", "level": "Expert", "description": "Task organization and Kanban workflows." },
+      "toad": { "experience": "+2 years", "level": "Intermediate", "description": "Management and querying of Oracle relational databases." }
+    }
   },
   "experienceSummary": {
     "label": "Career",
     "title": "Experience",
     "cta": "View full details →",
-    "current": "Current"
+    "current": "Current",
+    "companies": {
+      "izertis-cni": "Izertis - CNI Cybersecurity Project",
+      "izertis-ibm": "Izertis - IBM Project",
+      "tecnova": "Tecnova"
+    },
+    "modality": {
+      "remote": "Remote",
+      "onsite": "On-site"
+    }
   },
   "contact": {
     "label": "Contact",

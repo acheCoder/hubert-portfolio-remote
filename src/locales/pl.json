@@ -20,8 +20,11 @@
     "lang": {
       "label": "Komunikacja",
       "title": "Języki",
+      "spanishName": "Hiszpański",
       "spanish": "Ojczysty",
+      "polishName": "Polski",
       "polish": "Dwujęzyczny / Ojczysty",
+      "englishName": "Angielski",
       "english": "B1"
     },
     "jobs": {
@@ -70,13 +73,39 @@
   },
   "tech": {
     "label": "Stos technologiczny",
-    "title": "Technologie"
+    "title": "Technologie",
+    "items": {
+      "react": { "experience": "Aktualnie", "level": "Początkujący", "description": "Rozwój skalowalnych ekosystemów w architekturze heksagonalnej i mikrofrontendach z Module Federation." },
+      "angular": { "experience": "+5 lat", "level": "Ekspert", "description": "Wersje 8 do 18. Krytyczne migracje, architektura modularna, lazy loading i złożone panele." },
+      "ts": { "experience": "+5 lat", "level": "Ekspert", "description": "Ścisłe typowanie kontraktów, generics, utility types i skalowalne architektury." },
+      "js": { "experience": "+3 lata", "level": "Średniozaawansowany", "description": "ES6+, zaawansowana asynchroniczność, closures i logika rdzenna aplikacji." },
+      "scss": { "experience": "+1 rok", "level": "Początkujący", "description": "Theming multi-tenant, Design Tokens, mixiny i architektura BEM w projektach enterprise." },
+      "bootstrap": { "experience": "+4 lata", "level": "Zaawansowany", "description": "Projektowanie spójnych i responsywnych interfejsów z systemem grid i komponentami." },
+      "git": { "experience": "+5 lat", "level": "Ekspert", "description": "Strategie rozgałęzień, submoduły i rozwiązywanie konfliktów w dużych zespołach." },
+      "github": { "experience": "+5 lat", "level": "Ekspert", "description": "Kontrola wersji, przeglądy PR, Actions i współpraca zespołowa." },
+      "fork": { "experience": "+3 lata", "level": "Średniozaawansowany", "description": "Zaawansowane zarządzanie klientem Git i wizualne rozwiązywanie konfliktów." },
+      "swagger": { "experience": "+4 lata", "level": "Zaawansowany", "description": "Czytanie i integracja udokumentowanych kontraktów API." },
+      "postman": { "experience": "+4 lata", "level": "Zaawansowany", "description": "Testowanie endpointów, kolekcje i walidacja odpowiedzi." },
+      "bruno": { "experience": "Aktualnie", "level": "Średniozaawansowany", "description": "Klient API open-source nowej generacji." },
+      "jira": { "experience": "+5 lat", "level": "Ekspert", "description": "Metodologie zwinne, sprinty i zarządzanie cyklem życia oprogramowania." },
+      "trello": { "experience": "+5 lat", "level": "Ekspert", "description": "Organizacja zadań i przepływy Kanban." },
+      "toad": { "experience": "+2 lata", "level": "Średniozaawansowany", "description": "Zarządzanie i zapytania baz danych relacyjnych Oracle." }
+    }
   },
   "experienceSummary": {
     "label": "Kariera",
     "title": "Doświadczenie",
     "cta": "Zobacz pełne szczegóły →",
-    "current": "Aktualnie"
+    "current": "Aktualnie",
+    "companies": {
+      "izertis-cni": "Izertis - Projekt cyberbezpieczeństwa CNI",
+      "izertis-ibm": "Izertis - Projekt IBM",
+      "tecnova": "Tecnova"
+    },
+    "modality": {
+      "remote": "Zdalnie",
+      "onsite": "Stacjonarnie"
+    }
   },
   "contact": {
     "label": "Kontakt",

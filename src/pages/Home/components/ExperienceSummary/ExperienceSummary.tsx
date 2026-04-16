@@ -7,26 +7,29 @@ const ExperienceSummary = () => {
 
   const EXPERIENCE_SUMMARY = [
     {
-      company: 'Izertis - Proyecto ciberseguridad CNI',
+      companyKey: 'izertis-cni',
+      company: t('experienceSummary.companies.izertis-cni'),
       role: t('experience.jobs.izertis-cni.role'),
       period: t('experience.jobs.izertis-cni.period'),
-      modality: 'Remoto',
+      modality: t('experienceSummary.modality.remote'),
       current: true,
       tags: ['React 19', 'TypeScript', 'SCSS', 'Microfrontends', 'Clean Architecture'],
     },
     {
-      company: 'Izertis - Proyecto IBM',
+      companyKey: 'izertis-ibm',
+      company: t('experienceSummary.companies.izertis-ibm'),
       role: t('experience.jobs.izertis-ibm.role'),
       period: t('experience.jobs.izertis-ibm.period'),
-      modality: 'Remoto',
+      modality: t('experienceSummary.modality.remote'),
       current: false,
       tags: ['Angular 15', 'TypeScript', 'RxJS', 'Bootstrap'],
     },
     {
-      company: 'Tecnova',
+      companyKey: 'tecnova',
+      company: t('experienceSummary.companies.tecnova'),
       role: t('experience.jobs.tecnova.role'),
       period: t('experience.jobs.tecnova.period'),
-      modality: 'Presencial',
+      modality: t('experienceSummary.modality.onsite'),
       current: false,
       tags: ['Angular 8-18', 'JavaScript', 'TypeScript', 'Bootstrap', 'Oracle', 'jQuery'],
     },
@@ -46,7 +49,7 @@ const ExperienceSummary = () => {
 
       <div className="exp-summary__list">
         {EXPERIENCE_SUMMARY.map((item) => (
-          <div className="exp-summary__item" key={item.company}>
+          <div className="exp-summary__item" key={item.companyKey}>
             <div>
               <div className="exp-summary__company">{item.company}</div>
               <div className="exp-summary__role">{item.role}</div>

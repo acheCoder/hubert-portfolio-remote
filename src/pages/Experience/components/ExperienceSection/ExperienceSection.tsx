@@ -48,9 +48,9 @@ const ExperienceSection = () => {
   ];
 
   const LANGUAGES = [
-    { name: 'Español', level: t('experience.lang.spanish') },
-    { name: 'Polaco', level: t('experience.lang.polish') },
-    { name: 'Inglés', level: t('experience.lang.english') },
+    { name: t('experience.lang.spanishName'), level: t('experience.lang.spanish') },
+    { name: t('experience.lang.polishName'), level: t('experience.lang.polish') },
+    { name: t('experience.lang.englishName'), level: t('experience.lang.english') },
   ];
 
   return (
