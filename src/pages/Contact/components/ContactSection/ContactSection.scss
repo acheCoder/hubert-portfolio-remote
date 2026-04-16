@@ -1,0 +1,140 @@
+.contact {
+  padding: 6rem var(--content-padding-x);
+  max-width: 860px;
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__label {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-family: var(--font-hero);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 0 0 1rem;
+    line-height: 1.1;
+  }
+
+  &__subtitle {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  &__channels {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--color-bg-base);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__label {
+    font-family: var(--font-hero);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    transition: color 0.25s ease;
+  }
+
+  &__desc {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  &__arrow {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: color 0.25s ease, transform 0.25s ease;
+  }
+
+  &:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -8px var(--color-accent-glow);
+
+    .contact-card__icon {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    .contact-card__arrow {
+      color: var(--color-accent);
+      transform: translate(2px, -2px);
+    }
+  }
+
+  // Primary CTA card (email)
+  &--accent {
+    border-color: var(--color-accent);
+    background: rgba(255, 145, 77, 0.05);
+
+    .contact-card__icon {
+      background: rgba(255, 145, 77, 0.1);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+
+    .contact-card__label {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+      background: rgba(255, 145, 77, 0.1);
+      box-shadow: 0 12px 32px -8px var(--color-accent-glow);
+    }
+  }
+}

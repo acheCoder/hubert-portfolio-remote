@@ -1,15 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import federation from '@originjs/vite-plugin-federation';
+import path from 'path';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
   plugins: [
     react(),
     federation({
       name: 'portfolio_remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './PortfolioApp': './src/App.tsx', // Exponemos el App.tsx como un módulo
+        './PortfolioApp': './src/app/App.tsx',
       },
       shared: ['react', 'react-dom'],
     }),

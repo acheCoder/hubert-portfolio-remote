@@ -1,0 +1,115 @@
+.exp-card {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 48px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &__dot {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-bg-base);
+    border: 2px solid var(--color-accent);
+    z-index: 1;
+    transition: background-color 0.2s ease;
+
+    &--active {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--color-border);
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  &__company {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+
+    &--current {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+
+  &__role {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 2px;
+  }
+
+  &__period {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__bullets {
+    margin: 0 0 12px 0;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    li {
+      font-family: var(--font-primary);
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  &__tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background-color: rgba(255, 145, 77, 0.1);
+    color: var(--color-accent);
+    border: 1px solid rgba(255, 145, 77, 0.25);
+    font-family: var(--font-primary);
+  }
+}

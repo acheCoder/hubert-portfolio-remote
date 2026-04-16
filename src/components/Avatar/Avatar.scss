@@ -1,0 +1,33 @@
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background: transparent;
+
+  &__img {
+    object-fit: contain;
+    object-position: top;
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+  }
+
+  &--glow::before {
+    content: '';
+    position: absolute;
+    inset: -16px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 60%);
+    z-index: 0;
+    filter: blur(12px);
+  }
+}
+
+:root[data-theme="dark"] .avatar--glow::before {
+  background: radial-gradient(circle, rgba(255, 145, 77, 0.5) 0%, transparent 60%);
+  inset: -20px;
+  filter: blur(16px);
+}

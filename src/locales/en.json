@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "experiencia": "Experience",
+    "sobre mí": "About me",
+    "contacto": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "description": "Frontend Developer with 5+ years of experience. Angular, React, TypeScript. Companies like <strong>Tecnova</strong>, <strong>IBM</strong> and <strong>Izertis</strong>. Passionate about architecture and design.",
+    "status": "Available for new projects"
+  },
+  "experience": {
+    "label": "Career",
+    "title": "Professional experience",
+    "edu": {
+      "label": "Academic",
+      "title": "Education"
+    },
+    "lang": {
+      "label": "Communication",
+      "title": "Languages",
+      "spanish": "Native",
+      "polish": "Bilingual / Native",
+      "english": "B1"
+    },
+    "jobs": {
+      "izertis-cni": {
+        "role": "Front-end Software Engineer",
+        "period": "Sep 2025 -",
+        "bullets": [
+          "Development with React 19+ and TypeScript under hexagonal architecture and microfrontends.",
+          "Implementation of SCSS design tokens and dynamic multi-brand theming.",
+          "Proactive refactoring to improve maintainability and scalability.",
+          "Technical PR Reviews focused on architecture, typing and performance.",
+          "Secure backend integration and robust error handling."
+        ]
+      },
+      "izertis-ibm": {
+        "role": "Front-end Software Engineer",
+        "period": "Feb 2025 — Sep 2025",
+        "bullets": [
+          "Technical Leadership: Sole responsible for the Frontend area in strategic Telefónica projects. Constant coordination with the Software Architecture team.",
+          "Deep refactoring of legacy applications towards a modern ecosystem based on Angular 15 and TypeScript.",
+          "Implementation of complex asynchronous data flows with RxJS. Internationalization with Ngx-Translate.",
+          "Advanced version control with GitFlow (GitHub, Fork)."
+        ]
+      },
+      "tecnova": {
+        "role": "Front-end Software Engineer",
+        "period": "May 2020 — Feb 2025",
+        "bullets": [
+          "Led the progressive upgrade from Angular 8 to Angular 18, solving compatibility issues and optimizing performance.",
+          "Responsible for the lifecycle, development and maintenance of the interface, with JavaScript, TypeScript, CSS and Bootstrap.",
+          "Architected and developed the admin panel from scratch with Angular 16, Angular Material and NgApexCharts.",
+          "API consumption with Swagger and Postman. DB management with Toad Oracle. Agile flow with GitFlow, Jira and Trello."
+        ]
+      }
+    },
+    "education": {
+      "edu1": {
+        "school": "iFP — Innovation in Vocational Training",
+        "degree": "Advanced Certificate in Web Application Development"
+      },
+      "edu2": {
+        "school": "iFP — Innovation in Vocational Training",
+        "degree": "Intermediate Certificate in IT Technology and Computer Systems"
+      }
+    }
+  },
+  "tech": {
+    "label": "Tech stack",
+    "title": "Technologies"
+  },
+  "experienceSummary": {
+    "label": "Career",
+    "title": "Experience",
+    "cta": "View full details →",
+    "current": "Current"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk?",
+    "subtitle": "I'm open to new opportunities and collaborations.\nChoose your preferred channel and let's chat.",
+    "email": { "desc": "The most direct way. Write me from your favorite client." },
+    "linkedin": { "desc": "Let's connect professionally and expand our network." },
+    "github": { "desc": "Explore my code, projects and contributions." }
+  },
+  "about": {
+    "label": "About me",
+    "name": "Hi, I'm <span>Hubert Chim</span>",
+    "intro": "Front-end Software Engineer with 5+ years transforming complex web ecosystems. I have worked in enterprise environments for clients like Telefónica/O2 at IBM, led the technical evolution of Movelia.es at Tecnova, and currently drive Microfrontend and Design Token architectures at Izertis.<br/><br/>My approach combines code efficiency with a clear business vision. I don't just execute tasks — I take technical ownership, participate in architecture decisions and safeguard team quality through PR reviews and mentoring.",
+    "motivation": {
+      "label": "Motivation",
+      "title": "Why am I a developer?",
+      "text": "I got into development because I was fascinated by the idea of building things people actually use. What started as curiosity became a vocation when I saw the real impact of a good frontend: speed, clarity, user trust. Today I'm still driven by the same fundamentals — solving complex problems with elegant solutions and building products that scale without losing quality."
+    },
+    "values": {
+      "label": "Philosophy",
+      "title": "My professional values",
+      "items": [
+        { "title": "Clean code", "text": "Every line has a purpose. Maintainability and readability above all." },
+        { "title": "Architecture first", "text": "Today's technical decisions determine tomorrow's team velocity." },
+        { "title": "Continuous improvement", "text": "PR reviews, refactoring and constant learning are part of the job." },
+        { "title": "Technical ownership", "text": "Own the product, not just execute tickets." }
+      ]
+    },
+    "hobbies": {
+      "label": "Beyond code",
+      "title": "Free time",
+      "text": "When I'm not at the computer you'll find me working out, reading about productivity and mindset, playing football or exploring side projects that let me keep learning new technologies without pressure.",
+      "items": [
+        { "icon": "🏋️", "label": "Training" },
+        { "icon": "⚽", "label": "Football" },
+        { "icon": "📖", "label": "Reading" },
+        { "icon": "💻", "label": "Side projects" }
+      ]
+    }
+  }
+}

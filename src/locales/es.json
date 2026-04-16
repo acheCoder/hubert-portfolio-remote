@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "experiencia": "Experiencia",
+    "sobre mí": "Sobre mí",
+    "contacto": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "description": "Desarrollador Frontend con +5 años de experiencia. Angular, React, TypeScript. Empresas como <strong>Tecnova</strong>, <strong>IBM</strong> e <strong>Izertis</strong>. Apasionado por la arquitectura y el diseño.",
+    "status": "Disponible para nuevos proyectos"
+  },
+  "experience": {
+    "label": "Trayectoria",
+    "title": "Experiencia profesional",
+    "edu": {
+      "label": "Académica",
+      "title": "Formación"
+    },
+    "lang": {
+      "label": "Comunicación",
+      "title": "Idiomas",
+      "spanish": "Nativo",
+      "polish": "Bilingüe / Nativo",
+      "english": "B1"
+    },
+    "jobs": {
+      "izertis-cni": {
+        "role": "Ingeniero de Software Front-end",
+        "period": "Sep 2025 -",
+        "bullets": [
+          "Desarrollo con React 19+ y TypeScript bajo arquitectura hexagonal y microfrontends.",
+          "Implementación de design tokens SCSS y theming dinámico multi-marca.",
+          "Refactorización proactiva para mejorar mantenibilidad y escalabilidad.",
+          "PR Reviews técnicas centradas en arquitectura, tipado y rendimiento.",
+          "Integración backend segura y gestión robusta de errores."
+        ]
+      },
+      "izertis-ibm": {
+        "role": "Ingeniero de Software Front-end",
+        "period": "Feb 2025 — Sep 2025",
+        "bullets": [
+          "Liderazgo Técnico: Único responsable del área Frontend para proyectos estratégicos de Telefónica. Coordinación constante con el equipo de Arquitectura de Software.",
+          "Refactorización profunda de aplicaciones legacy hacia un ecosistema moderno basado en Angular 15 y TypeScript.",
+          "Implementación de flujos de datos asíncronos complejos con RxJS. Internacionalización con Ngx-Translate.",
+          "Control de versiones avanzado con GitFlow (GitHub, Fork)."
+        ]
+      },
+      "tecnova": {
+        "role": "Ingeniero de Software Front-end",
+        "period": "May 2020 — Feb 2025",
+        "bullets": [
+          "Lideré la actualización progresiva de Angular 8 a Angular 18, resolviendo problemas de compatibilidad y optimizando el rendimiento.",
+          "Responsable del ciclo de vida, desarrollo y mantenimiento de la interfaz, con JavaScript, TypeScript, CSS y Bootstrap.",
+          "Arquitecté y desarrollé desde cero el panel de administración con Angular 16, Angular Material y NgApexCharts.",
+          "Consumo de APIs con Swagger y Postman. Gestión de BBDD con Toad Oracle. Flujo ágil con GitFlow, Jira y Trello."
+        ]
+      }
+    },
+    "education": {
+      "edu1": {
+        "school": "iFP — Innovación en Formación Profesional",
+        "degree": "CFGS Desarrollo de Aplicaciones Web"
+      },
+      "edu2": {
+        "school": "iFP — Innovación en Formación Profesional",
+        "degree": "CFGM Tecnología Informática y Sistemas Informáticos"
+      }
+    }
+  },
+  "tech": {
+    "label": "Stack técnico",
+    "title": "Tecnologías"
+  },
+  "experienceSummary": {
+    "label": "Trayectoria",
+    "title": "Experiencia",
+    "cta": "Ver detalle completo →",
+    "current": "Actualidad"
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "¿Hablamos?",
+    "subtitle": "Estoy abierto a nuevas oportunidades y colaboraciones.\nElige el canal que prefieras y hablemos.",
+    "email": { "desc": "La vía más directa. Escríbeme desde tu cliente favorito." },
+    "linkedin": { "desc": "Conectemos profesionalmente y ampliemos nuestra red." },
+    "github": { "desc": "Explora mi código, proyectos y contribuciones." }
+  },
+  "about": {
+    "label": "Sobre mí",
+    "name": "Hola, soy <span>Hubert Chim</span>",
+    "intro": "Ingeniero de Software Front-end con más de 5 años transformando ecosistemas web complejos. He trabajado en entornos enterprise para clientes como Telefónica/O2 en IBM, liderado la evolución técnica de Movelia.es en Tecnova, y actualmente impulso arquitecturas basadas en Microfrontends y Design Tokens en Izertis.<br/><br/>Mi enfoque une la eficiencia del código con una visión clara de negocio. No solo ejecuto tareas — asumo responsabilidad técnica, participo en decisiones de arquitectura y cuido la calidad del equipo a través de PR reviews y mentoría.",
+    "motivation": {
+      "label": "Motivación",
+      "title": "¿Por qué soy desarrollador?",
+      "text": "Empecé en el mundo del desarrollo porque me fascinó la idea de construir cosas que la gente usa de verdad. Lo que empezó como curiosidad se convirtió en vocación cuando vi el impacto real de un buen frontend: velocidad, claridad, confianza del usuario. Hoy sigo motivado por los mismos fundamentos — resolver problemas complejos con soluciones elegantes y construir productos que escalan sin perder calidad."
+    },
+    "values": {
+      "label": "Filosofía",
+      "title": "Mis valores como profesional",
+      "items": [
+        { "title": "Código limpio", "text": "Cada línea tiene un propósito. Mantenibilidad y legibilidad por encima de todo." },
+        { "title": "Arquitectura primero", "text": "Las decisiones técnicas de hoy determinan la velocidad del equipo mañana." },
+        { "title": "Mejora continua", "text": "PR reviews, refactorizaciones y aprendizaje constante forman parte del trabajo." },
+        { "title": "Responsabilidad técnica", "text": "Asumir ownership del producto, no solo ejecutar tickets." }
+      ]
+    },
+    "hobbies": {
+      "label": "Fuera del código",
+      "title": "Tiempo libre",
+      "text": "Cuando no estoy delante del ordenador me encontrarás entrenando, leyendo sobre productividad y mentalidad, jugando al fútbol o explorando side projects que me permiten seguir aprendiendo tecnologías nuevas sin presión.",
+      "items": [
+        { "icon": "🏋️", "label": "Entrenamiento" },
+        { "icon": "⚽", "label": "Fútbol" },
+        { "icon": "📖", "label": "Lectura" },
+        { "icon": "💻", "label": "Side projects" }
+      ]
+    }
+  }
+}

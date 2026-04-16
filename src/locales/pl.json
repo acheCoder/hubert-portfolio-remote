@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "inicio": "Strona główna",
+    "experiencia": "Doświadczenie",
+    "sobre mí": "O mnie",
+    "contacto": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Cześć, jestem",
+    "description": "Frontend Developer z ponad 5-letnim doświadczeniem. Angular, React, TypeScript. Firmy takie jak <strong>Tecnova</strong>, <strong>IBM</strong> i <strong>Izertis</strong>. Pasjonat architektury i designu.",
+    "status": "Dostępny do nowych projektów"
+  },
+  "experience": {
+    "label": "Kariera",
+    "title": "Doświadczenie zawodowe",
+    "edu": {
+      "label": "Akademickie",
+      "title": "Wykształcenie"
+    },
+    "lang": {
+      "label": "Komunikacja",
+      "title": "Języki",
+      "spanish": "Ojczysty",
+      "polish": "Dwujęzyczny / Ojczysty",
+      "english": "B1"
+    },
+    "jobs": {
+      "izertis-cni": {
+        "role": "Inżynier Oprogramowania Front-end",
+        "period": "Wrz 2025 -",
+        "bullets": [
+          "Rozwój z React 19+ i TypeScript w architekturze heksagonalnej i mikrofrontendach.",
+          "Implementacja tokenów projektowych SCSS i dynamicznego motywu wielomarkowego.",
+          "Proaktywna refaktoryzacja w celu poprawy utrzymywalności i skalowalności.",
+          "Techniczne przeglądy PR skupione na architekturze, typowaniu i wydajności.",
+          "Bezpieczna integracja backendu i solidna obsługa błędów."
+        ]
+      },
+      "izertis-ibm": {
+        "role": "Inżynier Oprogramowania Front-end",
+        "period": "Lut 2025 — Wrz 2025",
+        "bullets": [
+          "Przywództwo techniczne: Jedyny odpowiedzialny za obszar Frontend w strategicznych projektach Telefónica. Stała koordynacja z zespołem Architektury Oprogramowania.",
+          "Głęboka refaktoryzacja aplikacji legacy w kierunku nowoczesnego ekosystemu opartego na Angular 15 i TypeScript.",
+          "Implementacja złożonych asynchronicznych przepływów danych z RxJS. Internacjonalizacja z Ngx-Translate.",
+          "Zaawansowana kontrola wersji z GitFlow (GitHub, Fork)."
+        ]
+      },
+      "tecnova": {
+        "role": "Inżynier Oprogramowania Front-end",
+        "period": "Maj 2020 — Lut 2025",
+        "bullets": [
+          "Kierowałem progresywną aktualizacją z Angular 8 do Angular 18, rozwiązując problemy kompatybilności i optymalizując wydajność.",
+          "Odpowiedzialny za cykl życia, rozwój i utrzymanie interfejsu, z JavaScript, TypeScript, CSS i Bootstrap.",
+          "Zaprojektowałem i rozwinąłem panel administracyjny od zera z Angular 16, Angular Material i NgApexCharts.",
+          "Konsumpcja API z Swagger i Postman. Zarządzanie bazami danych z Toad Oracle. Zwinny przepływ z GitFlow, Jira i Trello."
+        ]
+      }
+    },
+    "education": {
+      "edu1": {
+        "school": "iFP — Innowacja w Kształceniu Zawodowym",
+        "degree": "Wyższy Certyfikat w Rozwoju Aplikacji Webowych"
+      },
+      "edu2": {
+        "school": "iFP — Innowacja w Kształceniu Zawodowym",
+        "degree": "Średni Certyfikat w Technologii Informatycznej i Systemach Komputerowych"
+      }
+    }
+  },
+  "tech": {
+    "label": "Stos technologiczny",
+    "title": "Technologie"
+  },
+  "experienceSummary": {
+    "label": "Kariera",
+    "title": "Doświadczenie",
+    "cta": "Zobacz pełne szczegóły →",
+    "current": "Aktualnie"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Porozmawiajmy?",
+    "subtitle": "Jestem otwarty na nowe możliwości i współpracę.\nWybierz preferowany kanał i porozmawiajmy.",
+    "email": { "desc": "Najszybsza droga. Napisz do mnie ze swojego ulubionego klienta." },
+    "linkedin": { "desc": "Połączmy się profesjonalnie i poszerzmy naszą sieć." },
+    "github": { "desc": "Odkryj mój kod, projekty i wkład." }
+  },
+  "about": {
+    "label": "O mnie",
+    "name": "Cześć, jestem <span>Hubert Chim</span>",
+    "intro": "Inżynier Oprogramowania Front-end z ponad 5-letnim doświadczeniem w transformacji złożonych ekosystemów webowych. Pracowałem w środowiskach enterprise dla klientów takich jak Telefónica/O2 w IBM, prowadziłem ewolucję techniczną Movelia.es w Tecnova, a obecnie rozwijam architektury oparte na Mikrofrontendach i Design Tokenach w Izertis.<br/><br/>Moje podejście łączy efektywność kodu z jasną wizją biznesową. Nie tylko wykonuję zadania — biorę odpowiedzialność techniczną, uczestniczę w decyzjach architektonicznych i dbam o jakość zespołu poprzez przeglądy PR i mentoring.",
+    "motivation": {
+      "label": "Motywacja",
+      "title": "Dlaczego jestem programistą?",
+      "text": "Zacząłem programować, bo zafascynowała mnie idea tworzenia rzeczy, których ludzie naprawdę używają. To, co zaczęło się jako ciekawość, stało się powołaniem, gdy zobaczyłem realny wpływ dobrego frontendu: szybkość, przejrzystość, zaufanie użytkownika. Dziś nadal motywują mnie te same fundamenty — rozwiązywanie złożonych problemów eleganckimi rozwiązaniami i budowanie produktów, które skalują się bez utraty jakości."
+    },
+    "values": {
+      "label": "Filozofia",
+      "title": "Moje wartości zawodowe",
+      "items": [
+        { "title": "Czysty kod", "text": "Każda linia ma swój cel. Utrzymywalność i czytelność ponad wszystko." },
+        { "title": "Architektura przede wszystkim", "text": "Dzisiejsze decyzje techniczne określają prędkość zespołu jutro." },
+        { "title": "Ciągłe doskonalenie", "text": "Przeglądy PR, refaktoryzacje i ciągłe uczenie się to część pracy." },
+        { "title": "Odpowiedzialność techniczna", "text": "Brać odpowiedzialność za produkt, nie tylko wykonywać zadania." }
+      ]
+    },
+    "hobbies": {
+      "label": "Poza kodem",
+      "title": "Czas wolny",
+      "text": "Kiedy nie siedzę przed komputerem, znajdziesz mnie na treningu, czytającego o produktywności i mentalności, grającego w piłkę nożną lub eksplorującego projekty poboczne, które pozwalają mi uczyć się nowych technologii bez presji.",
+      "items": [
+        { "icon": "🏋️", "label": "Trening" },
+        { "icon": "⚽", "label": "Piłka nożna" },
+        { "icon": "📖", "label": "Czytanie" },
+        { "icon": "💻", "label": "Projekty poboczne" }
+      ]
+    }
+  }
+}
