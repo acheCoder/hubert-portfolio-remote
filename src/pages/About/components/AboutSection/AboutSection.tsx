@@ -1,9 +1,32 @@
 import './AboutSection.scss';
-import avatarImg from '@/assets/img/personal.jpg';
+import { useState, useEffect } from 'react';
+import avatarLight from '@/assets/img/personal.png';
+import avatarDark from '@/assets/img/personal-black.png';
 import { useLanguage } from '@/app/context/LanguageContext';
+
+const useTheme = () => {
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute('data-theme') ?? 'dark',
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setTheme(document.documentElement.getAttribute('data-theme') ?? 'dark');
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+    return () => observer.disconnect();
+  }, []);
+
+  return theme;
+};
 
 const AboutSection = () => {
   const { t, tList } = useLanguage();
+  const theme = useTheme();
+  const avatarImg = theme === 'dark' ? avatarDark : avatarLight;
 
   const values = tList<{ title: string; text: string }>('about.values.items');
   const hobbies = tList<{ icon: string; label: string }>('about.hobbies.items');
