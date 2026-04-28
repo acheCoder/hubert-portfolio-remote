@@ -45,8 +45,12 @@ $dock-height-mobile: 130px; // reserve for safe-area padding
     display: flex;
     flex-direction: column;
     align-items: center;
-    // Each card gets ~100px runway; total = cards × runway + one viewport
-    min-height: calc(100vh + var(--card-count, 8) * 100px);
+  }
+
+  /* Spacer after the last card so it can scroll into its sticky position */
+  &__spacer {
+    flex-shrink: 0;
+    height: 60vh;
   }
 
   /* ══════════════════════════
@@ -169,7 +173,6 @@ $dock-height-mobile: 130px; // reserve for safe-area padding
 
   &__dock-inner {
     text-align: center;
-    animation: dock-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
   &__dock-badge {
@@ -181,6 +184,7 @@ $dock-height-mobile: 130px; // reserve for safe-area padding
     font-weight: 700;
     color: var(--color-accent);
     margin-bottom: 6px;
+    transition: opacity 0.25s ease;
   }
 
   &__dock-text {
@@ -189,6 +193,7 @@ $dock-height-mobile: 130px; // reserve for safe-area padding
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.55;
     margin: 0;
+    transition: opacity 0.25s ease;
 
     [data-theme="light"] & {
       color: var(--color-text-muted);
@@ -258,7 +263,6 @@ $dock-height-mobile: 130px; // reserve for safe-area padding
     &__scroll {
       grid-column: 1;
       align-items: flex-end;
-      min-height: calc(100vh + var(--card-count, 8) * 120px);
     }
 
     &__card {

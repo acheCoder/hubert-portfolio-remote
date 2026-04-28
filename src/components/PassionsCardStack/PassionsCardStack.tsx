@@ -92,7 +92,7 @@ const PassionsCardStack: FC = () => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [dockVisible, setDockVisible] = useState(false);
-  const prevIndexRef = useRef(0);
+  const rafRef = useRef(0);
 
   /* — Show dock only when the scroll area is in view — */
   useEffect(() => {
@@ -107,32 +107,35 @@ const PassionsCardStack: FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  /* — Observe which card is most visible — */
+  /* — Detect active card via scroll position — */
   useEffect(() => {
-    const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
-    if (cards.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let bestIdx = prevIndexRef.current;
-        let bestRatio = 0;
-        entries.forEach((entry) => {
-          const idx = Number(entry.target.getAttribute('data-index'));
-          if (entry.intersectionRatio > bestRatio) {
-            bestRatio = entry.intersectionRatio;
-            bestIdx = idx;
+    const onScroll = () => {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        const cards = cardRefs.current;
+        // Find the last card whose top has scrolled past the viewport top
+        // (i.e. the topmost "stuck" card in the sticky stack)
+        let active = 0;
+        for (let i = 0; i < cards.length; i++) {
+          const card = cards[i];
+          if (!card) continue;
+          const rect = card.getBoundingClientRect();
+          // Card is stuck or above its sticky position when its top
+          // is near the top of the viewport. Use a generous threshold.
+          if (rect.top <= window.innerHeight * 0.35) {
+            active = i;
           }
-        });
-        if (bestIdx !== prevIndexRef.current) {
-          prevIndexRef.current = bestIdx;
-          setActiveIndex(bestIdx);
         }
-      },
-      { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-15% 0px -35% 0px' },
-    );
+        setActiveIndex((prev) => (prev !== active ? active : prev));
+      });
+    };
 
-    cards.forEach((card) => observer.observe(card));
-    return () => observer.disconnect();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // initial check
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener('scroll', onScroll);
+    };
   }, []);
 
   const activePassion = useMemo(() => PASSIONS[activeIndex], [activeIndex]);
@@ -174,12 +177,14 @@ const PassionsCardStack: FC = () => {
             </span>
           </div>
         ))}
+        {/* Spacer so the last card can reach its sticky position */}
+        <div className="card-stack__spacer" />
       </div>
 
       {/* Dock — fixed on mobile, sticky on desktop */}
       {dockVisible && (
         <div className="card-stack__dock">
-          <div className="card-stack__dock-inner" key={activePassion.id}>
+          <div className="card-stack__dock-inner">
             <span className="card-stack__dock-badge">
               {activePassion.suit} {activePassion.title}
             </span>
