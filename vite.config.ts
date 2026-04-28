@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: isProd
-      ? 'https://hubert-portfolio-remote.vercel.app/'
+      ? 'https://hubertchim-porfolio.vercel.app/'
       : '/',
     resolve: {
       alias: {

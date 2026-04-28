@@ -1,22 +1,31 @@
 import './AboutSection.scss';
 import { useState, useEffect } from 'react';
-import avatarLight from '@/assets/img/personal.png';
+import avatarLight from '@/assets/img/personal.jpg';
 import avatarDark from '@/assets/img/personal-black.png';
 import { useLanguage } from '@/app/context/LanguageContext';
+import PassionsCardStack from '@/components/PassionsCardStack/PassionsCardStack';
 
 const useTheme = () => {
   const [theme, setTheme] = useState(
-    () => document.documentElement.getAttribute('data-theme') ?? 'dark',
+    () => document.documentElement.getAttribute('data-theme') ?? 'light',
   );
 
   useEffect(() => {
+    const read = () =>
+      document.documentElement.getAttribute('data-theme') ?? 'light';
+
     const observer = new MutationObserver(() => {
-      setTheme(document.documentElement.getAttribute('data-theme') ?? 'dark');
+      setTheme(read());
     });
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ['data-theme'],
     });
+
+    // If the attribute was set between initial render and effect, the
+    // observer won't fire, so schedule a single sync via microtask.
+    queueMicrotask(() => setTheme(read()));
+
     return () => observer.disconnect();
   }, []);
 
@@ -79,6 +88,9 @@ const AboutSection = () => {
           ))}
         </div>
       </div>
+
+      <PassionsCardStack />
+
     </section>
   );
 };
